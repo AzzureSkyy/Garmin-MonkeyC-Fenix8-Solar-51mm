@@ -1,3 +1,8 @@
+# Project   : Garmin-MonkeyC-Fenix8-Solar-51mm
+# Author    : AzzureSkyy
+# Watermark : AzzureSkyy
+# Source    : https://github.com/AzzureSkyy/Garmin-MonkeyC-Fenix8-Solar-51mm
+# Copyright : (c) 2026 AzzureSkyy. All rights reserved. See LICENSE.
 # Builds the Amiibo app and runs it in the Connect IQ simulator (fenix 8 Solar 51mm).
 $ErrorActionPreference = 'Stop'
 $proj   = 'E:\Garmin Fenix'
@@ -53,3 +58,4 @@ if (-not (Get-Process simulator -ErrorAction SilentlyContinue)) {
 
 Write-Host "Loading app into simulator..." -ForegroundColor Cyan
 & "$bin\monkeydo.bat" $prg $device
+# AzzureSkyy

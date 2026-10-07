@@ -1,3 +1,8 @@
+# Project   : Garmin-MonkeyC-Fenix8-Solar-51mm
+# Author    : AzzureSkyy
+# Watermark : AzzureSkyy
+# Source    : https://github.com/AzzureSkyy/Garmin-MonkeyC-Fenix8-Solar-51mm
+# Copyright : (c) 2026 AzzureSkyy. All rights reserved. See LICENSE.
 param(
 	[string]$MatchesJson = "$env:TEMP\amiibo_image_matches.json",
 	[string]$OutDir = "E:\Garmin Fenix\resources\drawables\amiibo_icons",
@@ -46,3 +51,4 @@ foreach ($entry in $matched) {
 
 $manifest | ConvertTo-Json -Depth 5 | Out-File -FilePath "$env:TEMP\amiibo_icon_manifest.json" -Encoding utf8
 Write-Output "Resized $($manifest.Count) icons to $OutDir"
+# AzzureSkyy

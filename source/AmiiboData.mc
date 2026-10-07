@@ -1,3 +1,8 @@
+// Project   : Garmin-MonkeyC-Fenix8-Solar-51mm
+// Author    : AzzureSkyy
+// Watermark : AzzureSkyy
+// Source    : https://github.com/AzzureSkyy/Garmin-MonkeyC-Fenix8-Solar-51mm
+// Copyright : (c) 2026 AzzureSkyy. All rights reserved. See LICENSE.
 import Toybox.Lang;
 import Toybox.WatchUi;
 
@@ -84,3 +89,4 @@ module AmiiboData {
 		return WatchUi.loadResource(res[categoryIndex]) as Array<Array<String> >;
 	}
 }
+// AzzureSkyy

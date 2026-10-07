@@ -1,3 +1,8 @@
+# Project   : Garmin-MonkeyC-Fenix8-Solar-51mm
+# Author    : AzzureSkyy
+# Watermark : AzzureSkyy
+# Source    : https://github.com/AzzureSkyy/Garmin-MonkeyC-Fenix8-Solar-51mm
+# Copyright : (c) 2026 AzzureSkyy. All rights reserved. See LICENSE.
 param(
 	[string]$FullJsonPath = "$env:TEMP\amiibo_scan_full.json",
 	[string]$ManifestJsonPath = "$env:TEMP\amiibo_icon_manifest.json",
@@ -81,3 +86,4 @@ for ($i = 0; $i -lt $categoryVars.Count; $i++) {
 [System.IO.File]::WriteAllText($OutPath, $sb.ToString(), (New-Object System.Text.UTF8Encoding $false))
 $totalItems = (($data | ForEach-Object { $_.Items.Count }) | Measure-Object -Sum).Sum
 Write-Output "Generated $OutPath with $($data.Count) categories, $totalItems items, $($manifest.Count) icon mappings"
+# AzzureSkyy

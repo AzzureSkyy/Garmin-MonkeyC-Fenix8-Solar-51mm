@@ -1,3 +1,8 @@
+# Project   : Garmin-MonkeyC-Fenix8-Solar-51mm
+# Author    : AzzureSkyy
+# Watermark : AzzureSkyy
+# Source    : https://github.com/AzzureSkyy/Garmin-MonkeyC-Fenix8-Solar-51mm
+# Copyright : (c) 2026 AzzureSkyy. All rights reserved. See LICENSE.
 param(
 	[string]$Root = "E:\Downloads\roms\Nintendo Switch\Amiibos",
 	[string]$JsonPath = "$env:TEMP\amiibo_scan_full.json"
@@ -43,3 +48,4 @@ Get-ChildItem $Root -Directory | Where-Object { $exclude -notcontains $_.Name } 
 $result | ConvertTo-Json -Depth 6 | Out-File -FilePath $JsonPath -Encoding utf8
 $totalItems = (($result | ForEach-Object { $_.Items.Count }) | Measure-Object -Sum).Sum
 Write-Output "Categories: $($result.Count), TotalItems: $totalItems"
+# AzzureSkyy
